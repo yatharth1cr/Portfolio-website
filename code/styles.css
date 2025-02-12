@@ -187,6 +187,26 @@ footer {
   position: relative;
 }
 
+/* dark-mode */
+.dark-mode {
+  background-color: #1a1a1a;
+  color: #f9eeeb;
+}
+
+#dark-mode-toggle {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border: none;
+  background-color: #926290;
+  color: white;
+  border-radius: 5px;
+}
+
+#dark-mode-toggle:hover {
+  background-color: #f9eeeb;
+  color: #926290;
+}
+
 /* Animations */
 @keyframes fadeIn {
   from {

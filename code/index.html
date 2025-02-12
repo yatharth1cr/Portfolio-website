@@ -53,8 +53,14 @@
             <li>Modular React functional components</li>
           </ul>
           <div class="article-links">
-            <a href="#" target="_blank">Live Demo</a>
-            <a href="#" target="_blank">GitHub Code</a>
+            <a href="https://tourest-react-k1n7.vercel.app/" target="_blank"
+              >Live Demo</a
+            >
+            <a
+              href="https://github.com/yatharth1cr/tourest-react"
+              target="_blank"
+              >GitHub Code</a
+            >
           </div>
         </article>
 
@@ -83,15 +89,21 @@
           </div>
         </article>
         <article>
-          <img src="placeholder.jpg" alt="FlipBox preview" />
+          <img src="Screenshot 2025-02-12 133044.png" alt="FlipBox preview" />
           <h3>FlipBox</h3>
           <p>
             Implemented event handling with and without delegation to optimize
             performance and improve code efficiency.
           </p>
           <div class="article-links">
-            <a href="#" target="_blank">Live Demo</a>
-            <a href="#" target="_blank">GitHub Code</a>
+            <a href="https://dom-and-events-m1ag.vercel.app/" target="_blank"
+              >Live Demo</a
+            >
+            <a
+              href="https://github.com/yatharth1cr/DOM-and-EVENTS/tree/Assignment-RandomColorGenerator/Assignment%20-FlipBox"
+              target="_blank"
+              >GitHub Code</a
+            >
           </div>
         </article>
       </section>
@@ -106,8 +118,20 @@
             >
           </li>
           <li>Phone: +91 7065365105</li>
-          <li>LinkedIn: <a href="#" target="_blank">Yatharth Giri</a></li>
-          <li>GitHub: <a href="#" target="_blank">yatharth1cr</a></li>
+          <li>
+            LinkedIn:
+            <a
+              href="https://www.linkedin.com/in/yatharth-raj-giri-b51579287/"
+              target="_blank"
+              >Yatharth Giri</a
+            >
+          </li>
+          <li>
+            GitHub:
+            <a href="https://github.com/yatharth1cr" target="_blank"
+              >yatharth1cr</a
+            >
+          </li>
         </ul>
       </section>
     </main>
@@ -116,6 +140,24 @@
       <p>&copy; 2025 Yatharth Raj Giri. All rights reserved.</p>
     </footer>
 
-    <script src="scripts.js"></script>
+    <script>
+      const toggleButton = document.getElementById("dark-mode-toggle");
+      toggleButton.addEventListener("click", () => {
+        document.body.classList.toggle("dark-mode");
+        if (document.body.classList.contains("dark-mode")) {
+          toggleButton.textContent = "Light Mode";
+        } else {
+          toggleButton.textContent = "Dark Mode";
+        }
+      });
+    </script>
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+
+        transition: background-color 0.3s, color 0.3s;
+      }
+    </style>
   </body>
 </html>
